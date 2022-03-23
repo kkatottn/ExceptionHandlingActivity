@@ -7,6 +7,6 @@ def test_exception():
     num_1 = "hi"
     num_2 = "hello"
 
-    # Assert
+    # Act
     with pytest .raises(TypeError):
         multiply_two_nums(num_1, num_2)
