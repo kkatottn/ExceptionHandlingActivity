@@ -3,4 +3,10 @@ import pytest
 from activity.main import *
 
 def test_exception():
-    assert True
+    # Arrange
+    num_1 = "hi"
+    num_2 = "hello"
+
+    # Assert
+    with pytest .raises(TypeError):
+        multiply_two_nums(num_1, num_2)
